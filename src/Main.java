@@ -95,7 +95,7 @@ public class Main {
             var digit = working_copy % DECIMAL_RADIX;
             if (value % digit != 0) {
                 return false;
-            } // else, it was a divisor, keep looking, do_nothing();
+            } // else, it was a divisor, keep looking, doNothing();
             working_copy /= DECIMAL_RADIX;
         }
         return true;
@@ -111,7 +111,7 @@ public class Main {
         for (var element : candidates) {
             if (isDivisibleByAllDigits(element)) {
                 lynchBellNumbers.add(element);
-            } // else, not a Lynch-Bell number, do_nothing();
+            } // else, not a Lynch-Bell number, doNothing();
         }
 
         System.out.printf("Found %d Lynch-Bell numbers%n", lynchBellNumbers.size());
